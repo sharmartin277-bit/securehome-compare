@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<title>SecureHome Compare</title>
+<meta name="description" content="Independent comparisons of video doorbells, smart locks, security cameras, leak sensors and robot vacuums. Real specs, real prices, ranked for 2026.">
+<link rel="canonical" href="https://securehome-compare.pages.dev/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SecureHome Compare">
+<meta property="og:title" content="SecureHome Compare">
+<meta property="og:description" content="Independent comparisons of video doorbells, smart locks, security cameras, leak sensors and robot vacuums. Real specs, real prices, ranked for 2026.">
+<meta property="og:url" content="https://securehome-compare.pages.dev/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SecureHome Compare">
+<meta name="twitter:description" content="Independent comparisons of video doorbells, smart locks, security cameras, leak sensors and robot vacuums. Real specs, real prices, ranked for 2026.">
+<style>
+/* ============ NEON EDITORIAL THEME — "urban lifestyle magazine x street art x comparison engine" ============
+   Neon nav system: pink=action/shopping · lime=value/deals · cyan=info · purple=editorial/trending · yellow=attention */
+:root{--action:#ff2e7e;--pink:#ff2e7e;--magenta:#e935c1;--lime:#b8f53d;--purple:#8b5cf6;--cyan:#38e1ff;--yellow:#ffd926;
+--bg:#0b0b0f;--bg2:#101016;--card:#15151d;--card2:#1b1b25;--line:rgba(255,255,255,.09);
+--ink:#f7f7fa;--body:#d6d6e0;--muted:#a3a3b3;--beige:#f4eee1;--beige-ink:#191921;
+--font-d:"Oswald","Arial Narrow",Impact,sans-serif;--font-b:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+--font-h:"Caveat","Segoe Script",cursive}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-b);color:var(--body);background:var(--bg);line-height:1.62;-webkit-font-smoothing:antialiased;font-size:16px}
+::selection{background:var(--pink);color:#fff}
+a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--font-d);color:var(--ink);font-weight:600;text-transform:uppercase;letter-spacing:.01em;line-height:1.08}
+h1{font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:12px}
+h2{font-size:clamp(1.4rem,2.6vw,1.9rem);margin:34px 0 12px}
+h3{font-size:1.12rem;margin:22px 0 8px;letter-spacing:.03em}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:2px;border-radius:4px}
+.display{font-family:var(--font-d);text-transform:uppercase;font-weight:700;letter-spacing:.015em;line-height:.95}
+.outline-txt{color:transparent;-webkit-text-stroke:2px var(--ink)}
+.marker{background:linear-gradient(transparent 62%,rgba(255,46,126,.55) 62%,rgba(255,46,126,.55) 94%,transparent 94%);padding:0 .08em}
+.marker-lime{background:linear-gradient(transparent 62%,rgba(184,245,61,.5) 62%,rgba(184,245,61,.5) 94%,transparent 94%);padding:0 .08em}
+.hand{font-family:var(--font-h);font-weight:600;text-transform:none;letter-spacing:0}
+.kicker{font-family:var(--font-d);font-size:.85rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--pink);margin:44px 0 8px;display:flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:26px;height:3px;background:var(--pink);border-radius:2px;box-shadow:0 0 10px var(--pink)}
+.kicker.lime{color:var(--lime)}.kicker.lime::before{background:var(--lime);box-shadow:0 0 10px var(--lime)}
+.kicker.cyan{color:var(--cyan)}.kicker.cyan::before{background:var(--cyan);box-shadow:0 0 10px var(--cyan)}
+.kicker.purple{color:var(--purple)}.kicker.purple::before{background:var(--purple);box-shadow:0 0 10px var(--purple)}
+.kicker.yellow{color:var(--yellow)}.kicker.yellow::before{background:var(--yellow);box-shadow:0 0 10px var(--yellow)}
+h2.sec{font-size:clamp(1.7rem,3.4vw,2.6rem);margin:0 0 6px}
+.sec-sub{color:var(--muted);margin:0 0 6px;max-width:680px;font-size:1.02rem}
+.draft-banner{background:#b91c1c;color:#fff;text-align:center;padding:9px;font-weight:800;font-size:.88rem;letter-spacing:.02em}
+/* ---------- header ---------- */
+header.site{background:rgba(11,11,15,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#fff;position:sticky;top:0;z-index:60;border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;gap:26px;padding:14px 22px}
+.brand{font-family:var(--font-d);font-weight:700;font-size:1.35rem;color:#fff;white-space:nowrap;letter-spacing:.04em;text-transform:uppercase;display:flex;align-items:center;gap:11px}
+.brand:hover{text-decoration:none}
+.brand i{width:15px;height:15px;background:var(--pink);box-shadow:0 0 16px var(--pink);transform:rotate(45deg);font-style:normal;flex:none}
+nav.main{display:flex;gap:20px;flex-wrap:wrap;font-size:.93rem;margin-left:auto}
+nav.main a{color:#c9c9d6;font-weight:600;padding:4px 0;position:relative}
+nav.main a:hover{color:#fff;text-decoration:none}
+nav.main a:hover::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:3px;border-radius:2px;background:var(--pink);box-shadow:0 0 8px var(--pink)}
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;background:var(--bg);color:#fff;padding:84px 0 76px;border-bottom:1px solid var(--line)}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(700px 340px at 88% 6%,rgba(255,46,126,.20),transparent 62%),radial-gradient(620px 340px at 4% 96%,rgba(139,92,246,.16),transparent 60%),radial-gradient(420px 240px at 55% 45%,rgba(56,225,255,.07),transparent 65%)}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.eyebrow{display:inline-block;font-family:var(--font-d);font-size:.8rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--lime);border:1px solid rgba(184,245,61,.5);padding:8px 16px;border-radius:999px;margin-bottom:22px;box-shadow:0 0 14px rgba(184,245,61,.25);background:rgba(184,245,61,.06)}
+.hero h1{font-size:clamp(3rem,7.5vw,5.4rem);font-weight:700;line-height:.94;margin-bottom:18px;max-width:9em}
+.hero h1 .outline-txt{-webkit-text-stroke:2px var(--pink)}
+.hero p.lead{color:var(--body);font-size:1.2rem;max-width:600px;margin-bottom:30px}
+/* search */
+.searchbar{position:relative;max-width:560px;margin-bottom:18px}
+.searchbar form{display:flex;background:#fff;border-radius:14px;padding:6px;box-shadow:0 0 0 2px var(--pink),0 0 26px rgba(255,46,126,.45)}
+.searchbar input{flex:1;border:0;outline:0;font-size:1.02rem;padding:12px 16px;font-family:var(--font-b);color:#191921;background:transparent;min-width:0}
+.searchbar button{background:linear-gradient(135deg,var(--pink),var(--magenta));color:#fff;border:0;border-radius:10px;font-weight:800;font-size:1rem;padding:12px 24px;cursor:pointer;font-family:var(--font-d);letter-spacing:.08em;text-transform:uppercase}
+.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:4px}
+.chip{font-size:.82rem;font-weight:600;color:var(--body);border:1px solid var(--line);background:rgba(255,255,255,.04);padding:7px 14px;border-radius:999px}
+.chip:hover{border-color:var(--cyan);color:#fff;text-decoration:none;box-shadow:0 0 10px rgba(56,225,255,.35)}
+.chip-label{font-size:.8rem;color:var(--muted);align-self:center;margin-right:2px}
+.search-results{position:absolute;top:calc(100% + 8px);left:0;right:0;background:var(--card2);border:1px solid var(--line);border-radius:14px;box-shadow:0 24px 60px rgba(0,0,0,.6);z-index:70;overflow:hidden;display:none;max-height:340px;overflow-y:auto}
+.search-results.show{display:block}
+.search-results a{display:flex;justify-content:space-between;gap:12px;padding:12px 18px;color:var(--body);font-size:.94rem;border-bottom:1px solid var(--line)}
+.search-results a:last-child{border-bottom:0}
+.search-results a:hover{background:rgba(255,46,126,.12);text-decoration:none;color:#fff}
+.search-results .sr-type{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan);white-space:nowrap;align-self:center}
+/* hero collage */
+.hero-collage{position:relative;min-height:420px}
+.pol{position:absolute;background:#fff;padding:10px 10px 34px;border-radius:6px;box-shadow:0 18px 44px rgba(0,0,0,.55);width:200px;transition:transform .2s ease}
+.pol:hover{transform:rotate(0deg) scale(1.05)!important;z-index:5}
+.pol .art{height:150px;border-radius:4px;position:relative;overflow:hidden}
+.pol .cap{font-family:var(--font-h);font-size:1.05rem;color:#33333d;text-align:center;margin-top:8px;font-weight:600}
+.tape{position:absolute;width:74px;height:22px;background:rgba(255,217,38,.75);top:-11px;left:50%;transform:translateX(-50%) rotate(-4deg);box-shadow:0 2px 5px rgba(0,0,0,.2);z-index:2}
+.stk{position:absolute;font-family:var(--font-d);font-weight:700;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:7px 13px;border-radius:4px;box-shadow:0 6px 16px rgba(0,0,0,.4);z-index:3;white-space:nowrap}
+.stk-pink{background:var(--pink);color:#fff;transform:rotate(-7deg)}
+.stk-lime{background:var(--lime);color:#131a05;transform:rotate(5deg)}
+.stk-cyan{background:var(--cyan);color:#062a33;transform:rotate(-4deg)}
+.stk-purple{background:var(--purple);color:#fff;transform:rotate(6deg)}
+.stk-yellow{background:var(--yellow);color:#241c00;transform:rotate(-6deg)}
+.doodle{position:absolute;z-index:4;pointer-events:none}
+.hero-note{position:absolute;font-family:var(--font-h);font-size:1.25rem;color:var(--yellow);transform:rotate(-6deg);z-index:4;text-shadow:0 2px 8px rgba(0,0,0,.6)}
+.stats{display:flex;gap:36px;flex-wrap:wrap;margin-top:34px;position:relative;z-index:1}
+.stat b{display:block;font-family:var(--font-d);font-size:1.9rem;font-weight:700;color:#fff}
+.stat b em{font-style:normal;color:var(--pink)}
+.stat span{font-size:.85rem;color:var(--muted)}
+/* ---------- sections ---------- */
+main{padding:26px 0 10px}
+.trust{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:34px 0 8px}
+.trust>div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;position:relative;overflow:hidden}
+.trust>div::after{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--tc,var(--cyan));box-shadow:0 0 12px var(--tc,var(--cyan))}
+.trust .t-ico{display:inline-flex;width:32px;height:32px;border-radius:10px;background:rgba(255,255,255,.06);color:var(--tc,var(--cyan));font-weight:800;align-items:center;justify-content:center;margin-bottom:10px;font-size:1.05rem}
+.trust b{display:block;margin-bottom:3px;font-size:.99rem;color:var(--ink)}
+.trust p{font-size:.89rem;color:var(--muted);margin:0}
+/* ---------- product cards ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;margin:26px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:11px;position:relative;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.card:hover{transform:translateY(-5px);border-color:rgba(255,46,126,.5);box-shadow:0 18px 40px rgba(0,0,0,.5),0 0 24px rgba(255,46,126,.18)}
+.card p{color:var(--muted);font-size:.93rem;margin:0}
+.card h3{margin:0;font-size:1.16rem;line-height:1.25}.card h3 a{color:var(--ink)}
+.card h3 a:hover{color:var(--pink);text-decoration:none}
+/* product art tile — designed visual (no hotlinked retailer images) */
+.part{position:relative;border-radius:12px;overflow:hidden;min-height:190px;display:flex;align-items:center;justify-content:center;background:#0e0e14}
+.part svg.glyph{width:96px;height:96px;position:relative;z-index:1;filter:drop-shadow(0 0 14px var(--gc,rgba(255,46,126,.6)))}
+.part::before{content:"";position:absolute;inset:0;background:radial-gradient(220px 160px at 50% 40%,var(--gc,rgba(255,46,126,.35)),transparent 70%)}
+.part::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 14px,rgba(255,255,255,.025) 14px 15px);pointer-events:none}
+.part .price-sticker{position:absolute;bottom:12px;right:10px;z-index:2;background:var(--yellow);color:#241c00;font-family:var(--font-d);font-weight:700;font-size:1.02rem;padding:6px 14px;transform:rotate(-5deg);border-radius:4px;box-shadow:0 6px 14px rgba(0,0,0,.45)}
+.part .was-sticker{position:absolute;bottom:14px;left:12px;z-index:2;color:var(--muted);font-size:.85rem;text-decoration:line-through;transform:rotate(3deg)}
+.part .art-doodle{position:absolute;z-index:2;pointer-events:none}
+.badge-stk{display:inline-block;font-family:var(--font-d);font-weight:700;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;padding:7px 14px;border-radius:5px;align-self:flex-start;box-shadow:0 6px 16px rgba(0,0,0,.4);transform:rotate(-2deg)}
+.badge-stk.b-pink{background:var(--pink);color:#fff}
+.badge-stk.b-lime{background:var(--lime);color:#131a05}
+.badge-stk.b-cyan{background:var(--cyan);color:#062a33}
+.badge-stk.b-purple{background:var(--purple);color:#fff}
+.badge-stk.b-yellow{background:var(--yellow);color:#241c00}
+.price{font-family:var(--font-d);font-size:1.7rem;font-weight:700;color:#fff;letter-spacing:.01em}
+.price small{font-size:.8rem;color:var(--muted);font-weight:400;font-family:var(--font-b)}
+.rating{color:var(--yellow);font-size:1rem;letter-spacing:.06em}
+.rating small{color:var(--muted);letter-spacing:0;font-size:.85rem}
+.bestfor{font-size:.86rem;color:var(--body)}
+.bestfor b{color:var(--lime);font-weight:700}
+.spec-chips{display:flex;flex-wrap:wrap;gap:7px}
+.spec-chips span{font-size:.76rem;font-weight:600;color:var(--cyan);border:1px solid rgba(56,225,255,.35);background:rgba(56,225,255,.07);padding:4px 11px;border-radius:999px}
+.pc-pros,.pc-cons{font-size:.86rem;margin:0;display:flex;gap:8px;align-items:flex-start}
+.pc-pros{color:#c9e8b8}.pc-cons{color:#e8b8c4}
+.pc-pros::before{content:"✓";color:var(--lime);font-weight:800;flex:none}
+.pc-cons::before{content:"✕";color:var(--pink);font-weight:800;flex:none}
+.card .btn{width:100%;margin-top:6px}
+/* compare checkbox */
+.cmp-check{display:flex;align-items:center;gap:10px;font-size:.88rem;font-weight:600;color:var(--muted);cursor:pointer;user-select:none;padding:6px 2px}
+.cmp-check input{appearance:none;-webkit-appearance:none;width:22px;height:22px;border:2px solid var(--muted);border-radius:7px;background:transparent;cursor:pointer;position:relative;flex:none;transition:all .15s}
+.cmp-check input:checked{background:var(--purple);border-color:var(--purple);box-shadow:0 0 12px rgba(139,92,246,.7)}
+.cmp-check input:checked::after{content:"✓";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:.85rem}
+.cmp-check input:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
+.cmp-check:hover{color:var(--body)}
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,var(--action),var(--magenta));color:#fff!important;font-weight:800;padding:15px 28px;border-radius:13px;text-align:center;box-shadow:0 8px 24px rgba(255,46,126,.4);transition:transform .15s ease,box-shadow .15s ease;border:0;cursor:pointer;font-size:1rem;font-family:var(--font-d);letter-spacing:.06em;text-transform:uppercase}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(255,46,126,.55);text-decoration:none}
+.btn.ghost{background:transparent;color:var(--ink)!important;border:1.5px solid var(--line);box-shadow:none}
+.btn.ghost:hover{border-color:var(--pink);color:#fff!important;box-shadow:0 0 16px rgba(255,46,126,.3)}
+.btn.lime{background:linear-gradient(135deg,#9fe02e,#6fae12);color:#131a05!important;box-shadow:0 8px 24px rgba(184,245,61,.35)}
+.btn.pending{background:#3a3a46;box-shadow:none;cursor:not-allowed;color:#9a9aa8!important}
+.btn.pending:hover{transform:none;box-shadow:none}
+.btn.big{font-size:1.08rem;padding:17px 34px}
+.hero .btn.ghost{border-color:rgba(255,255,255,.3);color:#fff!important}
+/* ---------- CTA boxes ---------- */
+.cta-box{background:linear-gradient(140deg,#14141c,#1e1426);color:#fff;border-radius:22px;padding:40px 30px;margin:32px 0;text-align:center;position:relative;overflow:hidden;border:1px solid rgba(255,46,126,.35);box-shadow:0 0 34px rgba(255,46,126,.18)}
+.cta-box::before{content:"";position:absolute;inset:0;background:radial-gradient(480px 230px at 50% -10%,rgba(255,46,126,.28),transparent 65%)}
+.cta-box>*{position:relative;z-index:1}
+.cta-box .badge-stk{margin-bottom:14px}
+.cta-box h3{color:#fff;font-size:1.7rem;margin:10px 0}
+.cta-box p{color:var(--body);max-width:640px;margin:0 auto 14px}
+.cta-box .price{font-size:2.3rem}
+.cta-box .btn{font-size:1.1rem;padding:17px 44px;margin-top:14px}
+.cta-box .updated{color:var(--muted);margin-top:12px}
+/* ---------- lifestyle band (warm editorial break) ---------- */
+.life-band{background:var(--beige);color:var(--beige-ink);border-radius:26px;padding:54px 40px;margin:56px 0;position:relative;overflow:hidden}
+.life-band::before{content:"";position:absolute;inset:0;background:radial-gradient(500px 260px at 90% 10%,rgba(255,46,126,.10),transparent 60%),radial-gradient(420px 240px at 5% 95%,rgba(139,92,246,.10),transparent 60%)}
+.life-band .kicker{color:#c2145f;margin-top:0}.life-band .kicker::before{background:#c2145f;box-shadow:none}
+.life-band h2.sec{color:var(--beige-ink)}
+.life-band .sec-sub{color:#5c5c66}
+.life-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px;margin-top:28px;position:relative;z-index:1}
+.life-tile{background:#fff;border:2px solid var(--beige-ink);border-radius:16px;padding:24px 22px;position:relative;box-shadow:6px 6px 0 var(--beige-ink);transition:transform .18s ease,box-shadow .18s ease;display:block;color:var(--beige-ink)}
+.life-tile:hover{transform:translate(-2px,-2px) rotate(0deg)!important;box-shadow:9px 9px 0 var(--beige-ink);text-decoration:none;color:var(--beige-ink)}
+.life-tile h3{font-size:1.35rem;margin:0 0 8px;color:var(--beige-ink)}
+.life-tile p{font-size:.92rem;color:#5c5c66;margin:0 0 10px}
+.life-tile .hand{color:#c2145f;font-size:1.1rem}
+.life-tile .stk{font-size:.66rem}
+/* ---------- trending ---------- */
+.trend-note{font-size:.85rem;color:var(--muted);margin:-2px 0 6px}
+.trend-note b{color:var(--purple)}
+/* ---------- disclosure / tables / pros-cons ---------- */
+.disclosure{background:rgba(255,217,38,.07);border:1px solid rgba(255,217,38,.4);border-left:4px solid var(--yellow);border-radius:10px;padding:14px 18px;font-size:.87rem;color:#efe3b0;margin:24px 0}
+.disclosure strong{color:var(--yellow)}
+table.spec{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:14px;margin:18px 0;font-size:.93rem;min-width:660px;overflow:hidden}
+table.spec th,table.spec td{padding:13px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;color:var(--body)}
+table.spec tr:last-child th,table.spec tr:last-child td{border-bottom:0}
+table.spec th{background:#101018;color:#fff;font-family:var(--font-d);letter-spacing:.06em;text-transform:uppercase;font-size:.82rem}
+table.spec th:first-child{color:var(--cyan)}
+table.spec tr:nth-child(even) td{background:rgba(255,255,255,.025)}
+table.spec td strong,table.spec td b{color:#fff}
+.table-scroll{overflow-x:auto;border-radius:14px}
+.vs-table td:first-child{font-weight:700;color:#fff;background:#15151d;position:sticky;left:0;z-index:1}
+.winner{background:rgba(184,245,61,.08)!important;box-shadow:inset 4px 0 0 var(--lime)}
+.winner strong{color:var(--lime)!important}
+.proscons{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:18px 0}
+@media(max-width:640px){.proscons{grid-template-columns:1fr}}
+.pros,.cons{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.pros{box-shadow:inset 0 4px 0 var(--lime)}.cons{box-shadow:inset 0 4px 0 var(--pink)}
+.pros h3{color:var(--lime);margin:0 0 8px}.cons h3{color:var(--pink);margin:0 0 8px}
+.pros ul,.cons ul{padding-left:22px}.pros li,.cons li{margin:6px 0;color:var(--body)}
+.pros li::marker{content:"✓  ";color:var(--lime);font-weight:800}
+.cons li::marker{content:"✕  ";color:var(--pink);font-weight:800}
+.breadcrumb{font-size:.85rem;color:var(--muted);margin-bottom:14px}
+.breadcrumb a{color:var(--muted)}
+.faq{margin:22px 0}.faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:10px 0;padding:14px 18px}
+.faq summary{font-weight:700;cursor:pointer;color:var(--ink)}
+.faq p{color:var(--body)}
+.rank{font-family:var(--font-d);font-size:2.4rem;font-weight:700;color:var(--pink);line-height:1;text-shadow:0 0 18px rgba(255,46,126,.5)}
+footer.site{background:#08080c;color:#9a9aa8;padding:48px 0;margin-top:70px;font-size:.9rem;border-top:3px solid var(--pink);box-shadow:0 -4px 24px rgba(255,46,126,.15)}
+footer.site a{color:#d3d3e2}
+footer.site strong{color:#fff}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin-bottom:24px}
+footer.site .disclosure{background:rgba(255,255,255,.03);border-color:#2a2a35;color:#9a9aa8}
+.updated{font-size:.82rem;color:var(--muted)}
+.card img.real{width:100%;height:auto;border-radius:10px;aspect-ratio:16/9;object-fit:cover}
+.prod-img{width:100%;height:auto;border-radius:14px;margin:14px 0;box-shadow:0 10px 28px rgba(0,0,0,.5)}
+ul.clean{list-style:none}ul.clean li{margin:8px 0}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 24px;margin:22px 0}
+.toc strong{color:var(--ink)}
+/* ---------- compare tray (sticky) ---------- */
+#cmp-bar{position:fixed;left:50%;transform:translate(-50%,120%);bottom:18px;z-index:80;background:#14141c;border:1.5px solid var(--purple);border-radius:16px;box-shadow:0 0 28px rgba(139,92,246,.45),0 18px 44px rgba(0,0,0,.6);padding:13px 18px;display:flex;align-items:center;gap:16px;max-width:calc(100vw - 32px);transition:transform .25s ease}
+#cmp-bar.show{transform:translate(-50%,0)}
+#cmp-bar .n{font-family:var(--font-d);font-weight:700;font-size:1.05rem;color:#fff;white-space:nowrap}
+#cmp-bar .n em{font-style:normal;color:var(--purple)}
+#cmp-names{font-size:.84rem;color:var(--muted);max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#cmp-bar .btn{padding:12px 22px;font-size:.92rem;white-space:nowrap;background:linear-gradient(135deg,var(--purple),#6d3df5);box-shadow:0 8px 22px rgba(139,92,246,.45)}
+#cmp-clear{background:none;border:0;color:var(--muted);font-size:.85rem;cursor:pointer;text-decoration:underline;white-space:nowrap}
+/* ---------- compare tool page ---------- */
+.cmp-empty{text-align:center;padding:60px 20px;background:var(--card);border:1px dashed var(--line);border-radius:18px;margin:26px 0}
+.cmp-empty h2{margin-top:0}
+.cmp-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin:24px 0}
+/* ---------- guides ---------- */
+.guide-card{position:relative}
+.guide-card .hand{color:var(--cyan);font-size:1.05rem}
+/* ---------- responsive / mobile-first ---------- */
+@media(max-width:960px){
+.hero-grid{grid-template-columns:1fr;gap:34px}
+.hero-collage{min-height:340px;max-width:520px}
+}
+@media(max-width:680px){
+.hero{padding:56px 0 48px}
+header.site .wrap{flex-wrap:wrap;gap:8px 18px;padding:12px 20px}
+nav.main{gap:13px;font-size:.86rem;margin-left:0}
+/* swipeable product carousels on mobile */
+.grid.m-carousel{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;margin:20px -22px;padding:4px 22px 14px;scrollbar-width:thin}
+.grid.m-carousel .card{flex:0 0 82%;scroll-snap-align:start}
+.life-grid{grid-template-columns:1fr 1fr;gap:14px}
+.life-tile{padding:18px 16px}
+.life-tile h3{font-size:1.08rem}
+.cta-box{padding:30px 18px}
+.stats{gap:22px}
+#cmp-names{display:none}
+#cmp-bar{gap:10px;padding:11px 14px;bottom:12px}
+.hero-collage{min-height:300px}
+.pol{width:150px}.pol .art{height:110px}
+.searchbar button{padding:12px 16px}
+h2.sec{font-size:1.6rem}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.pol:hover{transform:none}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"SecureHome Compare","url":"https://securehome-compare.pages.dev"}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="brand" href="index.html"><i></i>SecureHome Compare</a>
+<nav class="main"><a href="index.html">Home</a><a href="categories/video-doorbells.html">Video Doorbells</a><a href="categories/smart-locks.html">Smart Locks</a><a href="categories/indoor-cameras.html">Indoor Cameras</a><a href="categories/outdoor-cameras.html">Outdoor Cameras</a><a href="categories/leak-sensors.html">Leak Sensors</a><a href="categories/robot-vacuums.html">Robot Vacuums</a><a href="guides.html">Guides</a><a href="about.html">About</a><a href="disclosure.html">Disclosure</a></nav>
+</div></header>
+
+<div class="hero"><div class="wrap"><div class="hero-grid"><div>
+<span class="eyebrow">Independent &middot; 2026 rankings</span>
+<h1 class="display">FIND THE <span class="outline-txt">GOOD STUFF.</span></h1>
+<p class="lead">Real comparisons. Better buys. Less scrolling.</p>
+<div class="searchbar"><form action="#" onsubmit="return false" role="search"><input id="site-search" type="search" placeholder="What are you shopping for?" aria-label="Search products, categories and guides" autocomplete="off"><button type="submit" id="search-go">Find it</button></form><div class="search-results" id="search-results"></div></div><div class="chips"><span class="chip-label">Popular:</span><a class="chip" href="#lifestyle">First Apartment</a><a class="chip" href="categories/video-doorbells.html">Tech</a><a class="chip" href="categories/leak-sensors.html">Budget Finds</a><a class="chip" href="#lifestyle">Couples</a><a class="chip" href="categories/robot-vacuums.html">Cleaning</a><a class="chip" href="categories/indoor-cameras.html">Bedroom</a><a class="chip" href="categories/leak-sensors.html">Kitchen</a><a class="chip" href="categories/indoor-cameras.html">Home Office</a></div>
+<div class="stats">
+<div class="stat"><b>30<em>+</em></b><span>products compared</span></div>
+<div class="stat"><b>6</b><span>categories</span></div>
+<div class="stat"><b>6</b><span>in-depth guides</span></div>
+</div>
+</div>
+<div class="hero-collage" aria-hidden="true"><div class="pol" style="top:0;left:2%;transform:rotate(-6deg)">
+<span class="tape"></span>
+<div class="art" style="background:radial-gradient(160px 120px at 50% 40%,rgba(255,46,126,.30),#101018 75%)"><svg class="glyph" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="color:#fff;--gc:rgba(255,46,126,.55)" aria-hidden="true"><rect x="30" y="14" width="36" height="68" rx="18"/><circle cx="48" cy="38" r="9"/><circle cx="48" cy="64" r="3" fill="currentColor" stroke="none"/></svg></div>
+<div class="cap">eufy eufy</div>
+<span class="stk stk-lime" style="top:-14px;right:-10px">BEST VALUE</span></div><div class="pol" style="top:36px;right:0;transform:rotate(5deg)">
+<span class="tape"></span>
+<div class="art" style="background:radial-gradient(160px 120px at 50% 40%,rgba(255,46,126,.30),#101018 75%)"><svg class="glyph" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="color:#fff;--gc:rgba(255,46,126,.55)" aria-hidden="true"><rect x="30" y="14" width="36" height="68" rx="18"/><circle cx="48" cy="38" r="9"/><circle cx="48" cy="64" r="3" fill="currentColor" stroke="none"/></svg></div>
+<div class="cap">Ring Ring</div>
+<span class="stk stk-purple" style="top:-14px;left:-12px">TRENDING</span></div><div class="pol" style="bottom:0;left:14%;transform:rotate(-4deg)">
+<span class="tape"></span>
+<div class="art" style="background:radial-gradient(160px 120px at 50% 40%,rgba(255,46,126,.30),#101018 75%)"><svg class="glyph" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="color:#fff;--gc:rgba(255,46,126,.55)" aria-hidden="true"><rect x="30" y="14" width="36" height="68" rx="18"/><circle cx="48" cy="38" r="9"/><circle cx="48" cy="64" r="3" fill="currentColor" stroke="none"/></svg></div>
+<div class="cap">Blink Blink</div>
+<span class="stk stk-cyan" style="bottom:38px;right:-14px">WE COMPARED</span></div>
+<svg class="doodle" style="top:6%;left:44%" width="90" height="60" viewBox="0 0 90 60" aria-hidden="true"><path d="M6 8 C 30 40, 55 45, 78 40 M66 30 L80 41 L66 50" fill="none" stroke="#b8f53d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<span class="doodle" style="bottom:8%;right:6%" aria-hidden="true"><svg width="70" height="30" viewBox="0 0 70 30"><path d="M10 4l2.5 6 6.5.5-5 4.2 1.6 6.3L10 17.5 4.4 21l1.6-6.3-5-4.2 6.5-.5Z" fill="#ffd926"/><path d="M38 8l2 5 5.5.4-4.2 3.6 1.3 5.4-4.6-3-4.6 3 1.3-5.4-4.2-3.6L36 13Z" fill="#ffd926" opacity=".8"/><circle cx="60" cy="12" r="4" fill="#ffd926" opacity=".6"/></svg></span>
+<svg class="doodle" style="top:44%;left:38%" width="120" height="70" viewBox="0 0 120 70" aria-hidden="true"><ellipse cx="60" cy="35" rx="52" ry="28" fill="none" stroke="#38e1ff" stroke-width="4" stroke-linecap="round" stroke-dasharray="300 18" transform="rotate(-6 60 35)"/></svg>
+<span class="stk stk-yellow" style="bottom:34%;left:2%">Under $50</span>
+<span class="hero-note" style="top:2%;right:12%">no monthly fees!</span>
+<span class="hero-note" style="bottom:2%;left:44%;color:var(--cyan)">renter-friendly &rarr;</span>
+</div>
+</div></div></div>
+<main><div class="wrap">
+
+<section class="life-band" id="lifestyle" aria-label="Shop by lifestyle">
+<div class="kicker">Shop your life</div>
+<h2 class="sec">Start from your situation.</h2>
+<p class="sec-sub">Real-life starting points, not spec sheets. Pick the life moment — we'll point you at the right gear.</p>
+<div class="life-grid"><a class="life-tile" href="categories/smart-locks.html" style="transform:rotate(-1.5deg)">
+<span class="stk" style="background:#7fb52a;color:#fff;top:-13px;right:14px">RENTALS</span>
+<h3>JUST MOVED IN</h3><p>First-apartment essentials — start at the front door.</p>
+<span class="hand">ditch the keys on day one &rarr;</span></a><a class="life-tile" href="categories/video-doorbells.html" style="transform:rotate(1.2deg)">
+<span class="stk" style="background:#ff2e7e;color:#fff;top:-13px;right:14px">GLOW-UP</span>
+<h3>MAKE IT FEEL EXPENSIVE</h3><p>Affordable upgrades with a premium look and feel.</p>
+<span class="hand">small spend, big impression &rarr;</span></a><a class="life-tile" href="categories/indoor-cameras.html" style="transform:rotate(-1deg)">
+<span class="stk" style="background:#0e9dbf;color:#fff;top:-13px;right:14px">NO DRILL</span>
+<h3>SMALL SPACE, BIG LIFE</h3><p>Apartment-friendly gear — no drilling, no wiring.</p>
+<span class="hand">landlord-approved picks &rarr;</span></a><a class="life-tile" href="categories/leak-sensors.html" style="transform:rotate(1.5deg)">
+<span class="stk" style="background:#d9a800;color:#fff;top:-13px;right:14px">STEALS</span>
+<h3>UNDER $50</h3><p>A $30 sensor can prevent a $10,000 flood.</p>
+<span class="hand">cheap insurance, honestly &rarr;</span></a><a class="life-tile" href="categories/robot-vacuums.html" style="transform:rotate(-1.3deg)">
+<span class="stk" style="background:#8b5cf6;color:#fff;top:-13px;right:14px">SPLURGE?</span>
+<h3>WORTH THE SPLURGE?</h3><p>Big-ticket buys stacked against cheaper rivals.</p>
+<span class="hand">we did the math for you &rarr;</span></a><a class="life-tile" href="categories/outdoor-cameras.html" style="transform:rotate(1deg)">
+<span class="stk" style="background:#ff2e7e;color:#fff;top:-13px;right:14px">OWNERS</span>
+<h3>FIRST HOME</h3><p>Practical protection for new homeowners.</p>
+<span class="hand">cover every angle &rarr;</span></a></div></section>
+<div class="trust">
+<div style="--tc:var(--pink)"><span class="t-ico">&#10003;</span><b>Ranked, not sold</b><p>No sponsored placements. Products earn their rank on specs, ratings, and value.</p></div>
+<div style="--tc:var(--lime)"><span class="t-ico">&#9733;</span><b>Real specs, real prices</b><p>Every table is built from manufacturer specs and current street prices.</p></div>
+<div style="--tc:var(--cyan)"><span class="t-ico">$</span><b>Reader-supported</b><p>We may earn a commission when you buy through our links &mdash; at no extra cost to you.</p></div>
+</div>
+<div class="kicker" id="top-picks">We compared them.</div>
+<h2 class="sec">The best in every category.</h2>
+<p class="sec-sub">Our highest-rated products across the site. Tick <b>Compare</b> on any cards to stack them side by side.</p>
+<div class="grid m-carousel"><div class="card"><div class="part" role="img" aria-label="eufy Security Video Doorbell E340 product illustration"><svg class="glyph" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="color:#fff;--gc:rgba(255,46,126,.55)" aria-hidden="true"><rect x="30" y="14" width="36" height="68" rx="18"/><circle cx="48" cy="38" r="9"/><circle cx="48" cy="64" r="3" fill="currentColor" stroke="none"/></svg><span class="price-sticker">$149.99</span><svg class="art-doodle" style="top:10px;left:12px" width="34" height="34" viewBox="0 0 34 34"><path d="M17 3v28M3 17h28" stroke="#ffd926" stroke-width="3" stroke-linecap="round"/></svg><svg class="art-doodle" style="bottom:12px;left:44%" width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="9" fill="none" stroke="#ff2e7e" stroke-width="3"/></svg></div>
+<span class="badge-stk b-pink">Best overall</span>
+<h3><a href="products/eufy-doorbell-e340.html">eufy Security Video Doorbell E340</a></h3>
+<div class="rating">★★★★★ <small>4.6/5 (<span title="Approximate aggregate of retailer ratings">&asymp;18,400 reviews</span>)</small></div>
+<div class="price">$149.99 <small>MSRP; often ~$120 street, Sep 2026</small></div>
+<p>Dual 2K cameras watch faces and packages, with local storage and zero subscription fees.</p>
+<p class="bestfor"><b>Best for:</b> Best overall</p>
+<div class="spec-chips"><span>Resolution: Dual 2K (front + package cam)</span><span>Power: Battery or wired</span><span>Field of view: 160° diagonal (main cam)</span></div>
+<p class="pc-pros">Dual cameras cover faces and doorstep packages</p><p class="pc-pros">No subscription required — local storage included</p><p class="pc-cons">No continuous 24/7 recording option</p>
+<a class="btn pending" href="#" data-pending="1" aria-disabled="true">Check price at eufy via Impact</a><div class="updated">Price link pending &mdash; check back soon.</div>
+<a class="btn ghost" href="products/eufy-doorbell-e340.html">Full review</a>
+<label class="cmp-check"><input type="checkbox" data-cmp="eufy-doorbell-e340" data-name="eufy Security Video Doorbell E340"> Compare</label>
+</div><div class="card"><div class="part" role="img" aria-label="Schlage Encode Plus product illustration"><svg class="glyph" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="color:#fff;--gc:rgba(56,225,255,.55)" aria-hidden="true"><rect x="28" y="42" width="40" height="34" rx="8"/><path d="M36 42 V30 a12 12 0 0 1 24 0 V42"/><circle cx="48" cy="56" r="4"/><path d="M48 60 v6"/></svg><span class="price-sticker">$319.99</span><svg class="art-doodle" style="top:10px;left:12px" width="34" height="34" viewBox="0 0 34 34"><path d="M17 3v28M3 17h28" stroke="#ffd926" stroke-width="3" stroke-linecap="round"/></svg><svg class="art-doodle" style="bottom:12px;left:44%" width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="9" fill="none" stroke="#ff2e7e" stroke-width="3"/></svg></div>
+<span class="badge-stk b-pink">Best overall</span>
+<h3><a href="products/schlage-encode-plus.html">Schlage Encode Plus</a></h3>
+<div class="rating">★★★★★ <small>4.6/5 (<span title="Approximate aggregate of retailer ratings">&asymp;15,300 reviews</span>)</small></div>
+<div class="price">$319.99 <small>MSRP; often ~$300 street, Sep 2026</small></div>
+<p>Grade 1 security with built-in Wi-Fi and Apple Home Key tap-to-unlock.</p>
+<p class="bestfor"><b>Best for:</b> Best overall</p>
+<div class="spec-chips"><span>Security rating: ANSI/BHMA Grade 1</span><span>Connectivity: Built-in Wi-Fi</span><span>Unlock methods: Touchscreen keypad, Apple Home Key, physical key, app</span></div>
+<p class="pc-pros">ANSI/BHMA Grade 1 — best physical security rating</p><p class="pc-pros">Built-in Wi-Fi, no hub needed</p><p class="pc-cons">Premium price</p>
+<a class="btn pending" href="#" data-pending="1" aria-disabled="true">Check price at Amazon</a><div class="updated">Price link pending &mdash; check back soon.</div>
+<a class="btn ghost" href="products/schlage-encode-plus.html">Full review</a>
+<label class="cmp-check"><input type="checkbox" data-cmp="schlage-encode-plus" data-name="Schlage Encode Plus"> Compare</label>
+</div><div class="card"><div class="part" role="img" aria-label="TP-Link Tapo C120 product illustration"><svg class="glyph" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="color:#fff;--gc:rgba(139,92,246,.55)" aria-hidden="true"><rect x="22" y="30" width="52" height="36" rx="10"/><circle cx="48" cy="48" r="10"/><circle cx="48" cy="48" r="4" fill="currentColor" stroke="none"/><path d="M48 20 v6 M30 66 l-6 10 M66 66 l6 10"/></svg><span class="price-sticker">$39.99</span><svg class="art-doodle" style="top:10px;left:12px" width="34" height="34" viewBox="0 0 34 34"><path d="M17 3v28M3 17h28" stroke="#ffd926" stroke-width="3" stroke-linecap="round"/></svg><svg class="art-doodle" style="bottom:12px;left:44%" width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="9" fill="none" stroke="#ff2e7e" stroke-width="3"/></svg></div>
+<span class="badge-stk b-lime">Best value</span>
+<h3><a href="products/tapo-c120.html">TP-Link Tapo C120</a></h3>
+<div class="rating">★★★★★ <small>4.6/5 (<span title="Approximate aggregate of retailer ratings">&asymp;22,600 reviews</span>)</small></div>
+<div class="price">$39.99 <small>MSRP, Sep 2026</small></div>
+<p>2K video, free AI detection, and local storage — for forty bucks.</p>
+<p class="bestfor"><b>Best for:</b> Best value</p>
+<div class="spec-chips"><span>Resolution: 2K QHD (4MP)</span><span>Power: USB plug-in</span><span>Field of view: 120° diagonal</span></div>
+<p class="pc-pros">Free AI person/pet/vehicle detection — no sub</p><p class="pc-pros">microSD local storage up to 512GB</p><p class="pc-cons">No HomeKit support</p>
+<a class="btn pending" href="#" data-pending="1" aria-disabled="true">Check price at Amazon</a><div class="updated">Price link pending &mdash; check back soon.</div>
+<a class="btn ghost" href="products/tapo-c120.html">Full review</a>
+<label class="cmp-check"><input type="checkbox" data-cmp="tapo-c120" data-name="TP-Link Tapo C120"> Compare</label>
+</div></div>
+<div class="kicker purple">Trending now</div>
+<h2 class="sec">What our editors keep reaching for.</h2>
+<p class="trend-note"><b>Editorial picks</b> — hand-chosen by our editors from this season's lineup, not sales data.</p>
+<div class="grid m-carousel"><div class="card"><div class="part" role="img" aria-label="SwitchBot Lock Vision product illustration"><svg class="glyph" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="color:#fff;--gc:rgba(56,225,255,.55)" aria-hidden="true"><rect x="28" y="42" width="40" height="34" rx="8"/><path d="M36 42 V30 a12 12 0 0 1 24 0 V42"/><circle cx="48" cy="56" r="4"/><path d="M48 60 v6"/></svg><span class="price-sticker">$169.99</span><svg class="art-doodle" style="top:10px;left:12px" width="34" height="34" viewBox="0 0 34 34"><path d="M17 3v28M3 17h28" stroke="#ffd926" stroke-width="3" stroke-linecap="round"/></svg><svg class="art-doodle" style="bottom:12px;left:44%" width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="9" fill="none" stroke="#ff2e7e" stroke-width="3"/></svg></div>
+<span class="badge-stk b-purple">Best new tech</span>
+<h3><a href="products/switchbot-lock-vision.html">SwitchBot Lock Vision</a></h3>
+<div class="rating">★★★★☆ <small>4.3/5 (<span title="Approximate aggregate of retailer ratings">&asymp;1,400 reviews</span>)</small></div>
+<div class="price">$169.99 <small>Launch price, approx, Sep 2026</small></div>
+<p>Phone-grade 3D face unlock on your front door — Matter over Wi-Fi, no hub.</p>
+<p class="bestfor"><b>Best for:</b> Best new tech</p>
+<div class="spec-chips"><span>Security rating: Smart deadbolt replacement</span><span>Connectivity: Matter-over-Wi-Fi</span><span>Unlock methods: 3D face unlock, NFC, passcodes, app, Apple Watch, physical key</span></div>
+<p class="pc-pros">3D facial recognition unlocks in &lt;1 second</p><p class="pc-pros">Matter-over-Wi-Fi, no hub required</p><p class="pc-cons">First-gen — software still maturing</p>
+<a class="btn pending" href="#" data-pending="1" aria-disabled="true">Check price at Amazon</a><div class="updated">Price link pending &mdash; check back soon.</div>
+<a class="btn ghost" href="products/switchbot-lock-vision.html">Full review</a>
+<label class="cmp-check"><input type="checkbox" data-cmp="switchbot-lock-vision" data-name="SwitchBot Lock Vision"> Compare</label>
+</div><div class="card"><div class="part" role="img" aria-label="Google Nest Cam Indoor (3rd Gen) product illustration"><svg class="glyph" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="color:#fff;--gc:rgba(139,92,246,.55)" aria-hidden="true"><rect x="22" y="30" width="52" height="36" rx="10"/><circle cx="48" cy="48" r="10"/><circle cx="48" cy="48" r="4" fill="currentColor" stroke="none"/><path d="M48 20 v6 M30 66 l-6 10 M66 66 l6 10"/></svg><span class="price-sticker">$99.99</span><svg class="art-doodle" style="top:10px;left:12px" width="34" height="34" viewBox="0 0 34 34"><path d="M17 3v28M3 17h28" stroke="#ffd926" stroke-width="3" stroke-linecap="round"/></svg><svg class="art-doodle" style="bottom:12px;left:44%" width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="9" fill="none" stroke="#ff2e7e" stroke-width="3"/></svg></div>
+<span class="badge-stk b-purple">Smartest alerts</span>
+<h3><a href="products/nest-cam-indoor-3rd-gen.html">Google Nest Cam Indoor (3rd Gen)</a></h3>
+<div class="rating">★★★★☆ <small>4.5/5 (<span title="Approximate aggregate of retailer ratings">&asymp;8,900 reviews</span>)</small></div>
+<div class="price">$99.99 <small>MSRP, Sep 2026</small></div>
+<p>Google&#x27;s smartest indoor cam — Gemini AI search at a $99 price.</p>
+<p class="bestfor"><b>Best for:</b> Smartest alerts</p>
+<div class="spec-chips"><span>Resolution: 2K HDR (2560x1440)</span><span>Power: Wired</span><span>Field of view: 152° diagonal</span></div>
+<p class="pc-pros">2K HDR video with 152° wide view</p><p class="pc-pros">Gemini AI alerts and footage search</p><p class="pc-cons">No microSD local storage</p>
+<a class="btn pending" href="#" data-pending="1" aria-disabled="true">Check price at Amazon</a><div class="updated">Price link pending &mdash; check back soon.</div>
+<a class="btn ghost" href="products/nest-cam-indoor-3rd-gen.html">Full review</a>
+<label class="cmp-check"><input type="checkbox" data-cmp="nest-cam-indoor-3rd-gen" data-name="Google Nest Cam Indoor (3rd Gen)"> Compare</label>
+</div></div>
+<div class="kicker lime">Browse the aisles</div>
+<h2 class="sec">Every category, compared.</h2>
+<div class="grid"><div class="card"><div class="part" style="min-height:120px"><svg class="glyph" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="color:#fff;--gc:rgba(255,46,126,.55)" aria-hidden="true"><rect x="30" y="14" width="36" height="68" rx="18"/><circle cx="48" cy="38" r="9"/><circle cx="48" cy="64" r="3" fill="currentColor" stroke="none"/></svg></div>
+<h3><a href="categories/video-doorbells.html">Video Doorbells</a></h3>
+<p>See who&#x27;s at the door from anywhere. We compare resolution, battery vs wired power, subscription requirements, and smart-home compatibility.</p>
+<p class="updated">5 products compared</p>
+<a class="btn ghost" href="categories/video-doorbells.html">Compare video doorbells</a></div><div class="card"><div class="part" style="min-height:120px"><svg class="glyph" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="color:#fff;--gc:rgba(56,225,255,.55)" aria-hidden="true"><rect x="28" y="42" width="40" height="34" rx="8"/><path d="M36 42 V30 a12 12 0 0 1 24 0 V42"/><circle cx="48" cy="56" r="4"/><path d="M48 60 v6"/></svg></div>
+<h3><a href="categories/smart-locks.html">Smart Locks</a></h3>
+<p>Keyless entry, guest codes, and auto-lock. We compare installation, battery life, and which ecosystems each lock plays nicely with.</p>
+<p class="updated">5 products compared</p>
+<a class="btn ghost" href="categories/smart-locks.html">Compare smart locks</a></div><div class="card"><div class="part" style="min-height:120px"><svg class="glyph" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="color:#fff;--gc:rgba(139,92,246,.55)" aria-hidden="true"><rect x="22" y="30" width="52" height="36" rx="10"/><circle cx="48" cy="48" r="10"/><circle cx="48" cy="48" r="4" fill="currentColor" stroke="none"/><path d="M48 20 v6 M30 66 l-6 10 M66 66 l6 10"/></svg></div>
+<h3><a href="categories/indoor-cameras.html">Indoor Cameras</a></h3>
+<p>Keep an eye on kids, pets, and entryways. We compare video quality, privacy features, and whether footage requires a subscription.</p>
+<p class="updated">5 products compared</p>
+<a class="btn ghost" href="categories/indoor-cameras.html">Compare indoor cameras</a></div><div class="card"><div class="part" style="min-height:120px"><svg class="glyph" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="color:#fff;--gc:rgba(255,217,38,.55)" aria-hidden="true"><rect x="26" y="34" width="44" height="30" rx="12"/><circle cx="48" cy="49" r="8"/><path d="M48 22 v8 M20 22 l6 6 M76 22 l-6 6"/><path d="M40 72 h16"/></svg></div>
+<h3><a href="categories/outdoor-cameras.html">Outdoor Cameras</a></h3>
+<p>Weatherproof eyes on your property day and night. We compare night vision, detection smarts, and battery vs wired vs solar power.</p>
+<p class="updated">5 products compared</p>
+<a class="btn ghost" href="categories/outdoor-cameras.html">Compare outdoor cameras</a></div><div class="card"><div class="part" style="min-height:120px"><svg class="glyph" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="color:#fff;--gc:rgba(56,225,255,.55)" aria-hidden="true"><path d="M48 14 C48 14 28 44 28 58 a20 20 0 0 0 40 0 C68 44 48 14 48 14 Z"/><path d="M40 62 a10 10 0 0 0 8 8"/></svg></div>
+<h3><a href="categories/leak-sensors.html">Leak Sensors</a></h3>
+<p>A $30 sensor can prevent a $10,000 flood. We compare detection speed, alert options, and hub requirements.</p>
+<p class="updated">5 products compared</p>
+<a class="btn ghost" href="categories/leak-sensors.html">Compare leak sensors</a></div><div class="card"><div class="part" style="min-height:120px"><svg class="glyph" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="color:#fff;--gc:rgba(184,245,61,.55)" aria-hidden="true"><circle cx="48" cy="52" r="26"/><circle cx="48" cy="52" r="9"/><path d="M48 26 v-8 M30 70 l-6 8 M66 70 l6 8"/></svg></div>
+<h3><a href="categories/robot-vacuums.html">Robot Vacuums</a></h3>
+<p>Self-cleaning floors on a schedule. We compare suction, mopping, self-emptying docks, and obstacle avoidance.</p>
+<p class="updated">5 products compared</p>
+<a class="btn ghost" href="categories/robot-vacuums.html">Compare robot vacuums</a></div></div>
+<div class="kicker yellow">Don&rsquo;t buy it yet.</div>
+<h2 class="sec">Read the short version first.</h2>
+<div class="grid"><div class="card guide-card"><span class="hand">read this first &darr;</span>
+<h3><a href="guides/best-video-doorbells-2026.html">Best Video Doorbells of 2026</a></h3>
+<p>The best video doorbell of 2026 depends on one question: do you want to pay a monthly subscription, or not? We compared the top video doorbells from R...</p>
+<a class="btn ghost" href="guides/best-video-doorbells-2026.html">Read the guide</a></div><div class="card guide-card"><span class="hand">read this first &darr;</span>
+<h3><a href="guides/best-smart-locks-2026.html">Best Smart Locks of 2026</a></h3>
+<p>The best smart lock of 2026 should install on your existing deadbolt in under 30 minutes, hold a charge for months, and still let you use a physical k...</p>
+<a class="btn ghost" href="guides/best-smart-locks-2026.html">Read the guide</a></div><div class="card guide-card"><span class="hand">read this first &darr;</span>
+<h3><a href="guides/best-indoor-cameras-2026.html">Best Indoor Security Cameras of 2026</a></h3>
+<p>The best indoor security camera of 2026 gives you crisp video, fast alerts, and privacy controls you can actually trust. We compared indoor cameras fr...</p>
+<a class="btn ghost" href="guides/best-indoor-cameras-2026.html">Read the guide</a></div><div class="card guide-card"><span class="hand">read this first &darr;</span>
+<h3><a href="guides/best-outdoor-cameras-2026.html">Best Outdoor Security Cameras of 2026</a></h3>
+<p>The best outdoor security camera of 2026 sees clearly at night, tells people apart from passing cars, and survives real weather. We compared outdoor c...</p>
+<a class="btn ghost" href="guides/best-outdoor-cameras-2026.html">Read the guide</a></div><div class="card guide-card"><span class="hand">read this first &darr;</span>
+<h3><a href="guides/best-leak-sensors-2026.html">Best Water Leak Sensors of 2026</a></h3>
+<p>The best water leak sensor of 2026 is the one you install before you need it — a small sensor under the sink or water heater can alert your phone the ...</p>
+<a class="btn ghost" href="guides/best-leak-sensors-2026.html">Read the guide</a></div><div class="card guide-card"><span class="hand">read this first &darr;</span>
+<h3><a href="guides/best-robot-vacuums-2026.html">Best Robot Vacuums of 2026</a></h3>
+<p>The best robot vacuum of 2026 empties itself, mops without streaking, and doesn&#x27;t eat your charging cables. We compared robot vacuums from Roboro...</p>
+<a class="btn ghost" href="guides/best-robot-vacuums-2026.html">Read the guide</a></div></div>
+<div class="disclosure"><strong>Affiliate disclosure:</strong> As an affiliate, we may earn a commission from qualifying purchases made through links on this page — at no extra cost to you.</div>
+<p class="updated">Last updated 2026-10-02. Prices change frequently &mdash; click through to confirm the current price.</p>
+<script>(function(){var E=[{"t": "Category", "n": "Video Doorbells", "u": "categories/video-doorbells.html"}, {"t": "Category", "n": "Smart Locks", "u": "categories/smart-locks.html"}, {"t": "Category", "n": "Indoor Cameras", "u": "categories/indoor-cameras.html"}, {"t": "Category", "n": "Outdoor Cameras", "u": "categories/outdoor-cameras.html"}, {"t": "Category", "n": "Leak Sensors", "u": "categories/leak-sensors.html"}, {"t": "Category", "n": "Robot Vacuums", "u": "categories/robot-vacuums.html"}, {"t": "Product", "n": "eufy Security Video Doorbell E340", "u": "products/eufy-doorbell-e340.html"}, {"t": "Product", "n": "Ring Battery Doorbell 2K Plus", "u": "products/ring-battery-doorbell-2k-plus.html"}, {"t": "Product", "n": "Arlo Video Doorbell 2K (2nd Gen)", "u": "products/arlo-doorbell-2k-2nd-gen.html"}, {"t": "Product", "n": "Blink Video Doorbell (2nd Gen)", "u": "products/blink-doorbell-2nd-gen.html"}, {"t": "Product", "n": "Google Nest Doorbell Wired (3rd Gen)", "u": "products/nest-doorbell-wired-3rd-gen.html"}, {"t": "Product", "n": "Schlage Encode Plus", "u": "products/schlage-encode-plus.html"}, {"t": "Product", "n": "Yale Assure Lock 2 (Wi-Fi Touchscreen)", "u": "products/yale-assure-lock-2.html"}, {"t": "Product", "n": "August Wi-Fi Smart Lock (4th Gen)", "u": "products/august-wifi-4th-gen.html"}, {"t": "Product", "n": "eufy Smart Lock C30", "u": "products/eufy-smart-lock-c30.html"}, {"t": "Product", "n": "SwitchBot Lock Vision", "u": "products/switchbot-lock-vision.html"}, {"t": "Product", "n": "TP-Link Tapo C120", "u": "products/tapo-c120.html"}, {"t": "Product", "n": "Google Nest Cam Indoor (3rd Gen)", "u": "products/nest-cam-indoor-3rd-gen.html"}, {"t": "Product", "n": "Arlo Essential Indoor Camera (2nd Gen, 2K)", "u": "products/arlo-essential-indoor-2k.html"}, {"t": "Product", "n": "Blink Mini 2K+", "u": "products/blink-mini-2k-plus.html"}, {"t": "Product", "n": "Ring Indoor Cam (2nd Gen)", "u": "products/ring-indoor-cam-2nd-gen.html"}, {"t": "Product", "n": "eufy SoloCam S340", "u": "products/eufy-solocam-s340.html"}, {"t": "Product", "n": "Arlo Pro 6", "u": "products/arlo-pro-6.html"}, {"t": "Product", "n": "Ring Outdoor Cam Plus", "u": "products/ring-outdoor-cam-plus.html"}, {"t": "Product", "n": "Reolink Argus 3 Pro", "u": "products/reolink-argus-3-pro.html"}, {"t": "Product", "n": "Blink Outdoor 4", "u": "products/blink-outdoor-4.html"}, {"t": "Product", "n": "Govee WiFi Water Leak Detector (3-Pack)", "u": "products/govee-leak-detector-3pack.html"}, {"t": "Product", "n": "YoLink Water Leak Sensor Starter Kit", "u": "products/yolink-leak-sensor-kit.html"}, {"t": "Product", "n": "Honeywell Home Wi-Fi Water Leak Sensor", "u": "products/honeywell-leak-sensor.html"}, {"t": "Product", "n": "Ring Alarm Flood and Freeze Sensor", "u": "products/ring-flood-freeze-sensor.html"}, {"t": "Product", "n": "Phyn Plus Smart Water Assistant", "u": "products/phyn-plus.html"}, {"t": "Product", "n": "Dreame X60 Max Ultra Complete", "u": "products/dreame-x60-max-ultra.html"}, {"t": "Product", "n": "Roborock Qrevo Curv 2 Flow", "u": "products/roborock-qrevo-curv-2-flow.html"}, {"t": "Product", "n": "eufy Robot Vacuum Omni S2", "u": "products/eufy-omni-s2.html"}, {"t": "Product", "n": "Shark AI Ultra 2-in-1 (RV2610WA)", "u": "products/shark-ai-ultra-rv2610wa.html"}, {"t": "Product", "n": "iRobot Roomba Combo j10+", "u": "products/roomba-combo-j10-plus.html"}, {"t": "Guide", "n": "Best Video Doorbells of 2026", "u": "guides/best-video-doorbells-2026.html"}, {"t": "Guide", "n": "Best Smart Locks of 2026", "u": "guides/best-smart-locks-2026.html"}, {"t": "Guide", "n": "Best Indoor Security Cameras of 2026", "u": "guides/best-indoor-cameras-2026.html"}, {"t": "Guide", "n": "Best Outdoor Security Cameras of 2026", "u": "guides/best-outdoor-cameras-2026.html"}, {"t": "Guide", "n": "Best Water Leak Sensors of 2026", "u": "guides/best-leak-sensors-2026.html"}, {"t": "Guide", "n": "Best Robot Vacuums of 2026", "u": "guides/best-robot-vacuums-2026.html"}],K=["video doorbells see who's at the door from anywhere. we compare resolution, battery vs wired power, subscription requirements, and smart-home compatibility. best video doorbell video doorbell comparison video doorbell no subscription", "smart locks keyless entry, guest codes, and auto-lock. we compare installation, battery life, and which ecosystems each lock plays nicely with. best smart lock smart deadbolt comparison keyless door lock", "indoor cameras keep an eye on kids, pets, and entryways. we compare video quality, privacy features, and whether footage requires a subscription. best indoor security camera indoor camera no subscription", "outdoor cameras weatherproof eyes on your property day and night. we compare night vision, detection smarts, and battery vs wired vs solar power. best outdoor security camera wireless outdoor camera comparison", "leak sensors a $30 sensor can prevent a $10,000 flood. we compare detection speed, alert options, and hub requirements. best water leak sensor smart water leak detector", "robot vacuums self-cleaning floors on a schedule. we compare suction, mopping, self-emptying docks, and obstacle avoidance. best robot vacuum robot vacuum mop comparison", "eufy security video doorbell e340 dual 2k cameras watch faces and packages, with local storage and zero subscription fees. eufy", "ring battery doorbell 2k plus sharp head-to-toe 2k video and the deepest alexa integration of any doorbell. ring", "arlo video doorbell 2k (2nd gen) true 2k head-to-toe video that mounts wired or on battery \u2014 and talks to every ecosystem. arlo", "blink video doorbell (2nd gen) the cheapest mainstream doorbell, with a two-year battery life. blink", "google nest doorbell wired (3rd gen) google's ai-first wired doorbell with gemini-powered context alerts. google nest", "schlage encode plus grade 1 security with built-in wi-fi and apple home key tap-to-unlock. schlage", "yale assure lock 2 (wi-fi touchscreen) the compatibility champion \u2014 swappable modules speak every smart-home language. yale", "august wi-fi smart lock (4th gen) smartens your existing deadbolt in minutes \u2014 renter-friendly, no keyway change. august", "eufy smart lock c30 a real wi-fi smart lock with keypad and physical key \u2014 for under $80. eufy", "switchbot lock vision phone-grade 3d face unlock on your front door \u2014 matter over wi-fi, no hub. switchbot", "tp-link tapo c120 2k video, free ai detection, and local storage \u2014 for forty bucks. tp-link tapo", "google nest cam indoor (3rd gen) google's smartest indoor cam \u2014 gemini ai search at a $99 price. google nest", "arlo essential indoor camera (2nd gen, 2k) 2k indoor video with an automated privacy shield that physically covers the lens. arlo", "blink mini 2k+ the cheapest way to get 2k indoor video on alexa. blink", "ring indoor cam (2nd gen) ring's plug-in workhorse \u2014 frequently on deep sale. ring", "eufy solocam s340 solar-powered dual-camera zoom with 360\u00b0 pan \u2014 and zero monthly fees. eufy", "arlo pro 6 premium wireless image quality that speaks every smart-home language. arlo", "ring outdoor cam plus ring's best-looking 2k camera with every power option imaginable. ring", "reolink argus 3 pro no-subscription battery/solar camera with on-camera ai detection. reolink", "blink outdoor 4 two-year battery life at throwaway-sale prices. blink", "govee wifi water leak detector (3-pack) three wi-fi leak sensors with a 100db siren \u2014 no hub, no subscription. govee", "yolink water leak sensor starter kit quarter-mile lora range that alerts even when the internet is down. yolink", "honeywell home wi-fi water leak sensor trusted-brand sensor with temperature and humidity monitoring built in. honeywell home", "ring alarm flood and freeze sensor leak plus freeze warnings, inside the ring alarm system you may already own. ring", "phyn plus smart water assistant whole-home protection that shuts off your water automatically. phyn", "dreame x60 max ultra complete 35,000 pa flagship suction with mopping that fits under low furniture. dreame", "roborock qrevo curv 2 flow roller-mop specialist that scrubs hard floors like a stick vacuum. roborock", "eufy robot vacuum omni s2 eufy's top-spec flagship: 30,000 pa and a roller mop with an all-in-one station. eufy", "shark ai ultra 2-in-1 (rv2610wa) self-emptying vacuum-and-mop at a midrange price. shark", "irobot roomba combo j10+ irobot's flagship 2-in-1 with a retractable mop and full ecosystem support. irobot", "best video doorbells of 2026 the best video doorbell of 2026 depends on one question: do you want to pay a monthly subscription, or not? we compared the top video doorbells from ring, eufy, blink, arlo and google nest on video quality, battery life, motion detection, and total cost of ownership. our top picks below balance sharp 2k footage, reliable alerts, and honest pricing \u2014 including strong no-subscription options.", "best smart locks of 2026 the best smart lock of 2026 should install on your existing deadbolt in under 30 minutes, hold a charge for months, and still let you use a physical key as backup. we compared smart locks from schlage, yale, august, eufy and switchbot on installation, battery life, guest access, and alexa/google/homekit support.", "best indoor security cameras of 2026 the best indoor security camera of 2026 gives you crisp video, fast alerts, and privacy controls you can actually trust. we compared indoor cameras from blink, eufy, ring, wyze and tp-link tapo on video quality, subscription requirements, and privacy features like physical shutters.", "best outdoor security cameras of 2026 the best outdoor security camera of 2026 sees clearly at night, tells people apart from passing cars, and survives real weather. we compared outdoor cameras from arlo, eufy, ring, blink and reolink on night vision, smart detection, power options, and weatherproofing.", "best water leak sensors of 2026 the best water leak sensor of 2026 is the one you install before you need it \u2014 a small sensor under the sink or water heater can alert your phone the moment water appears. we compared leak sensors from govee, yolink, ring, phyn and honeywell on detection speed, alert options, and whether they need a hub.", "best robot vacuums of 2026 the best robot vacuum of 2026 empties itself, mops without streaking, and doesn't eat your charging cables. we compared robot vacuums from roborock, irobot, eufy, shark and dreame on suction power, mopping, self-emptying docks, and obstacle avoidance."];
+var inp=document.getElementById('site-search'),box=document.getElementById('search-results');if(!inp||!box)return;
+function go(u){location.href=u}
+inp.addEventListener('input',function(){var q=inp.value.trim().toLowerCase();
+ if(q.length<2){box.classList.remove('show');box.innerHTML='';return}
+ var out=[];for(var i=0;i<E.length&&out.length<7;i++){if(K[i].indexOf(q)>-1)out.push(E[i])}
+ if(!out.length){box.classList.remove('show');box.innerHTML='';return}
+ box.innerHTML=out.map(function(e){return '<a href="'+e.u+'"><span>'+e.n.replace(/</g,'&lt;')+'</span><span class="sr-type">'+e.t+'</span></a>'}).join('');
+ box.classList.add('show');});
+inp.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();var a=box.querySelector('a');if(a)go(a.getAttribute('href'))}});
+var goBtn=document.getElementById('search-go');if(goBtn)goBtn.addEventListener('click',function(e){e.preventDefault();var a=box.querySelector('a');if(a)go(a.getAttribute('href'))});
+document.addEventListener('click',function(e){if(!e.target.closest||!e.target.closest('.searchbar')){box.classList.remove('show')}});
+})();</script>
+
+</div></main>
+<footer class="site"><div class="wrap">
+<div class="cols">
+<div><strong style="color:#fff">SecureHome Compare</strong><p>Smart home security, compared — so you buy the right gear the first time.</p></div>
+<div><strong style="color:#fff">Categories</strong><ul class="clean"><li><a href="categories/video-doorbells.html">Video Doorbells</a></li><li><a href="categories/smart-locks.html">Smart Locks</a></li><li><a href="categories/indoor-cameras.html">Indoor Cameras</a></li><li><a href="categories/outdoor-cameras.html">Outdoor Cameras</a></li><li><a href="categories/leak-sensors.html">Leak Sensors</a></li><li><a href="categories/robot-vacuums.html">Robot Vacuums</a></li></ul></div>
+<div><strong style="color:#fff">Company</strong><ul class="clean">
+<li><a href="about.html">About us</a></li><li><a href="disclosure.html">Affiliate disclosure</a></li><li><a href="privacy.html">Privacy policy</a></li></ul></div>
+</div>
+<div class="disclosure" style="background:none;border-color:#33506e;color:#9fb3c8">As an affiliate, we may earn a commission from qualifying purchases made through links on this page — at no extra cost to you. See our <a href="disclosure.html">full affiliate disclosure</a>.</div>
+<p>&copy; 2026 SecureHome Compare. All rights reserved. Prices and availability subject to change.</p>
+</div></footer>
+<div id="cmp-bar" data-root="compare.html" role="region" aria-label="Product comparison tray">
+<span class="n"><em id="cmp-count">0</em> selected</span>
+<span id="cmp-names"></span>
+<a class="btn" id="cmp-go" href="compare.html">Compare now &rarr;</a>
+<button id="cmp-clear" type="button">clear</button>
+</div>
+<script>(function(){var KEY='ff_compare',MAX=4;
+function get(){try{return JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){return[]}}
+function set(a){try{localStorage.setItem(KEY,JSON.stringify(a))}catch(e){}}
+var bar=document.getElementById('cmp-bar');if(!bar)return;
+var root=bar.getAttribute('data-root')||'compare.html';
+function render(){var a=get();
+ if(!a.length){bar.classList.remove('show');return}
+ bar.classList.add('show');
+ document.getElementById('cmp-count').textContent=a.length;
+ var nm=document.getElementById('cmp-names');
+ nm.textContent=a.slice(0,2).map(function(x){return x.n}).join('  ·  ')+(a.length>2?'  +'+(a.length-2)+' more':'');
+ document.getElementById('cmp-go').onclick=function(e){e.preventDefault();location.href=root+'?ids='+a.map(function(x){return x.id}).join(',')};}
+document.addEventListener('change',function(e){var c=e.target&&e.target.closest?e.target.closest('[data-cmp]'):null;if(!c)return;
+ var a=get(),id=c.getAttribute('data-cmp'),nm=c.getAttribute('data-name')||id;
+ if(c.checked){if(a.length>=MAX){c.checked=false;alert('Pick up to '+MAX+' products to compare.');return}
+  if(!a.some(function(x){return x.id===id}))a.push({id:id,n:nm});}
+ else{a=a.filter(function(x){return x.id!==id})}
+ set(a);render();});
+document.addEventListener('DOMContentLoaded',function(){var a=get(),ids={};a.forEach(function(x){ids[x.id]=1});
+ document.querySelectorAll('[data-cmp]').forEach(function(c){c.checked=!!ids[c.getAttribute('data-cmp')]});
+ render();
+ var clr=document.getElementById('cmp-clear');if(clr)clr.onclick=function(){set([]);document.querySelectorAll('[data-cmp]').forEach(function(c){c.checked=false});render()};});
+})();</script>
+<script>(function(){document.addEventListener('click',function(e){var t=e.target;var a=t.closest?t.closest('a[data-outbound],a[data-pending]'):null;if(!a)return;if(a.hasAttribute('data-pending')){e.preventDefault();return;}var d={slot:a.getAttribute('data-outbound'),product:a.getAttribute('data-product')||'',ts:Date.now()};(window.__affq=window.__affq||[]).push(d);if(window.plausible){try{plausible('Outbound Click',{props:{slot:d.slot,product:d.product}})}catch(_){}}});})();</script>
+</body>
+</html>
